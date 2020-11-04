@@ -1,24 +1,17 @@
-# README
+# Rails 6 demo app using Tailwind CSS
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Used frameworks and libraries
 
-Things you may want to cover:
+- ruby `2.7.0`
+- rails `6.0.3`
+- [Tailwind CSS](https://tailwindcss.com) framework
 
-* Ruby version
+## Installation
 
-* System dependencies
+- run `bundle` to install Rails dependencies defined in `Gemfile`
+- run `yarn` to install JS and CSS dependencies
 
-* Configuration
+## Run
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- start up the server with `rails s`
+- point you browser to `localhost:3000`
