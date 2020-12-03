@@ -1,0 +1,13 @@
+<% if object.errors.any? %>
+  <div class="bg-red-200">
+    <h2 class="bg-red-400">
+      <%= pluralize(object.errors.count, "error") %> prohibited this <%= object.class.model_name.human%> from being saved:
+    </h2>
+
+      <ul>
+        <% object.errors.full_messages.each do |message| %>
+          <li class="text-white"><%= message %></li>
+        <% end %>
+      </ul>
+  </div>
+<% end %>
