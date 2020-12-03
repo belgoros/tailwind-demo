@@ -1,4 +1,4 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   future: {
@@ -9,12 +9,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        sans: ["Inter", ...defaultTheme.fontFamily.sans],
       },
     },
   },
   variants: {},
-  plugins: [
-    require('@tailwindcss/ui'),
-  ],
-}
+  plugins: [require("@tailwindcss/ui"), require("@tailwindcss/custom-forms")],
+};
