@@ -12,7 +12,19 @@
 </head>
 
 <body>
-  <%= yield %>
+  <header>
+    <%= render "layouts/navbar" %>
+  </header>
+  <section class="m-2">
+    <% flash.each do |name, msg| %>
+      <% if msg.is_a?(String) %>
+        <div class="bg-<%= name.to_s == 'notice' ? 'green-100' : 'red-100'%>">
+          <p><%= msg %></p>
+        </div>
+      <% end %>
+    <% end %>
+    <%= yield %>
+  </section>
 </body>
 
 </html>
