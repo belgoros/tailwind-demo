@@ -18,8 +18,8 @@
   <section class="m-2">
     <% flash.each do |name, msg| %>
       <% if msg.is_a?(String) %>
-        <div class="bg-#{name.to_s == 'notice' ? 'green-200' : 'red-200'}">
-          <div><%= msg %></div>
+        <div class="bg-<%= name.to_s == 'notice' ? 'green-100' : 'red-100'%>">
+          <p><%= msg %></p>
         </div>
       <% end %>
     <% end %>
