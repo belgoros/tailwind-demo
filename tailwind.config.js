@@ -14,7 +14,10 @@ module.exports = {
     },
   },
   variants: {
-    backgroundColor: ["responsive", "hover", "focus", "active"],
+    extend: {
+      textColor: ['visited'],
+      backgroundColor: ["responsive", "hover", "focus", "active"]
+    },
   },
   plugins: [require("@tailwindcss/ui"), require("@tailwindcss/custom-forms")],
 };
