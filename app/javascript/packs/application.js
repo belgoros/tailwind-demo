@@ -10,4 +10,7 @@ require("channels")
 require("alpinejs")
 
 // Tailwind CSS
-import "../stylesheets/application"
+// import '../src/application.scss' and require('../css/application.scss') can be used interchangeably.
+// The major difference between require and import , is that require will automatically scan node_modules
+// folder to find modules, but import, which comes from ES6 doesn't so you must specify the path of the module.
+require("stylesheets/application.scss")
